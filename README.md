@@ -15,3 +15,8 @@ Organized into nine chapters, this book begins with an overview of the computer 
 > A The Basics of Logic Design.
 > B Graphics and Computing GPUs.
 > C Mapping Control to Hardware.
+> D A Survey of RISC Architectures
+
+Attempt | #1 | #2 | #3 | #4 | #5 | #6 | #A | #B | #C | #D | 
+--- | --- | --- | --- |--- |--- |--- |--- |--- |--- |--- |
+Seconds | Computer Abstractions and Technology. | Instructions: Language of the Computer.| Arithmetic for Computers. | The Processor. | Large and Fast: Exploiting Memory Hierarchy. | Parallel Processors from Client to Cloud. | The Basics of Logic Design. | Graphics and Computing GPUs. |  Mapping Control to Hardware. | A Survey of RISC Architectures | 
