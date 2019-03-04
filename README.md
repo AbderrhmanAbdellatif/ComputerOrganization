@@ -11,7 +11,7 @@ Organized into nine chapters, this book begins with an overview of the computer 
 > 3 Arithmetic for Computers.
 > 4 The Processor.
 > 5 Large and Fast: Exploiting Memory Hierarchy.
-? 6 Parallel Processors from Client to Cloud.
+> 6 Parallel Processors from Client to Cloud.
 > A The Basics of Logic Design.
 > B Graphics and Computing GPUs.
 > C Mapping Control to Hardware.
