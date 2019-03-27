@@ -66,64 +66,64 @@
 ;	  
 
 ;B)
-  
-   MOV R0,#0
-   MOV R2,#0
-   MOV R3,#0
-   MOV R4,#0
-   MOV R5,#0
-   MOV R7,#5
-   MOV R9,#0
-ILK
-  LDR R8,[R1],#4
-  ADD R0,R0,R8
-  SUBS R7,R7,#1
-  BNE ILK
-    MOV R7,#5	
-ILK1
-  LDR R8,[R1],#4
-  ADD R2,R2,R8
-  SUBS R7,R7,#1
-  BNE ILK1
-    MOV R7,#5
-ILK2
-  LDR R8,[R1],#4
-  ADD R3,R3,R8
-  SUBS R7,R7,#1
-  BNE ILK2
-    MOV R7,#5
-ILK3
-  LDR R8,[R1],#4
-  ADD R4,R4,R8
-  SUBS R7,R7,#1
-  BNE ILK3
-    MOV R7,#5
-ILK4
-  LDR R8,[R1],#4
-  ADD R5,R5,R8
-  SUBS R7,R7,#1
-  BNE ILK4
-  
-  LDR R7,=0X80000000 ;0X80000000,0X800000FF  o aders araligi tuttum  ondan  en buyuk  sayi alayim 
-  STR R0,[R7],#4
-  STR R2,[R7],#4
-  STR R3,[R7],#4
-  STR R4,[R7],#4
-  STR R5,[R7],#4
- 
-	LDR R6,=0X80000000 
-	MOV R7,#5
-	MOV R1,#0
-	LDR R3,[R6]
-	
-loop ADD R1,R1,#4
-	 LDR R5,[R6,R1]
-	 CMP R3,R5
-     BHI sonra
-	 MOV R11,R5
-sonra subs R7,R7,#1
-      CMP R7,#0
-	  BNE loop
+;  
+;   MOV R0,#0
+;   MOV R2,#0
+;   MOV R3,#0
+;   MOV R4,#0
+;   MOV R5,#0
+;   MOV R7,#5
+;   MOV R9,#0
+;ILK
+;  LDR R8,[R1],#4
+;  ADD R0,R0,R8
+;  SUBS R7,R7,#1
+;  BNE ILK
+;    MOV R7,#5	
+;ILK1
+;  LDR R8,[R1],#4
+;  ADD R2,R2,R8
+;  SUBS R7,R7,#1
+;  BNE ILK1
+;    MOV R7,#5
+;ILK2
+;  LDR R8,[R1],#4
+;  ADD R3,R3,R8
+;  SUBS R7,R7,#1
+;  BNE ILK2
+;    MOV R7,#5
+;ILK3
+;  LDR R8,[R1],#4
+;  ADD R4,R4,R8
+;  SUBS R7,R7,#1
+;  BNE ILK3
+;    MOV R7,#5
+;ILK4
+;  LDR R8,[R1],#4
+;  ADD R5,R5,R8
+;  SUBS R7,R7,#1
+;  BNE ILK4
+;  
+;  LDR R7,=0X80000000 ;0X80000000,0X800000FF  o aders araligi tuttum  ondan  en buyuk  sayi alayim 
+;  STR R0,[R7],#4
+;  STR R2,[R7],#4
+;  STR R3,[R7],#4
+;  STR R4,[R7],#4
+;  STR R5,[R7],#4
+; 
+;	LDR R6,=0X80000000 
+;	MOV R7,#5
+;	MOV R1,#0
+;	LDR R3,[R6]
+;	
+;loop ADD R1,R1,#4
+;	 LDR R5,[R6,R1]
+;	 CMP R3,R5
+;     BHI sonra
+;	 MOV R11,R5
+;sonra subs R7,R7,#1
+;      CMP R7,#0
+;	  BNE loop
 
 ;c)
 ;  MOV R0,#40
@@ -143,10 +143,14 @@ sonra subs R7,R7,#1
 ;	   BNE loop
 ;       BX LR
 
-CDIZI DCD 10 , 1, 1, 17, 1
-	  DCD 2 , -2, 2, 2, 2
-	  DCD 3 , 30, -13, 3, 3
-	  DCD 4 , -4, 4, 40, 4
-	  DCD 5 , -50, 5, 5, 5
+;CDIZI DCD 10 , 1, 1, 17, 1
+;	  DCD 2 , -2, 2, 2, 2
+;	  DCD 3 , 30, -13, 3, 3
+;	  DCD 4 , -4, 4, 40, 4
+;	  DCD 5 , -50, 5, 5, 5
+
+
+
+ LDR 
     END
 	
