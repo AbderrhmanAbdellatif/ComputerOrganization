@@ -1,2 +1,2 @@
 Dependencies for Project 'firstAssemblyProg', Target 'Target 1': (DO NOT MODIFY !)
-F (.\anadosya.s)(0x5C95EBFF)(--cpu ARM7TDMI --pd "__EVAL SETA 1" -g --apcs=interwork -IC:\Keil_v5\ARM\RV31\INC-IC:\Keil_v5\ARM\CMSIS\Include--pd "__UVISION_VERSION SETA 526"--list .\listings\anadosya.lst --xref -o .\objects\anadosya.o --depend .\objects\anadosya.d)
+F (.\anadosya.s)(0x5CAF9BE3)(--cpu ARM7TDMI --pd "__EVAL SETA 1" -g --apcs=interwork -IC:\Keil_v5\ARM\RV31\INC-IC:\Keil_v5\ARM\CMSIS\Include--pd "__UVISION_VERSION SETA 526"--list .\listings\anadosya.lst --xref -o .\objects\anadosya.o --depend .\objects\anadosya.d)
