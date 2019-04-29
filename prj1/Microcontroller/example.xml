@@ -1,0 +1,12 @@
+<Microcode>
+	<State name="STATE0">
+		<Signal name = "Signal1"/>
+		<Signal name = "Signal2"/>
+		<Goto state="STATE1"/>
+	</State>
+	<State name="STATE1" onZ="false">
+		<Signal name = "Signal3"/>
+		<Signal name = "Signal4"/>
+		<Goto state="STATE2"/>
+	</State>
+</Microcode>

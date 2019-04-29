@@ -1,0 +1,40 @@
+Play around with the simulator. Try writing some simple programs to get used
+to LC 2200 assembly. For example write programs to copy values from one
+register to another or to load/store values from memory. We have provided
+you with an assembler (lc2200-16as.py) and simulator (lc2200-16sim.py)
+
+Please run 'python lc2200-16as.py -h' and 'python lc2200-16sim.py -h'
+in order to see how to run these programs.
+
+Here is the suggested workflow for writing and running your assembly
+programs on the simulator:
+	1. Edit and save your assembly file <filename>.s with your favorite editor
+	2. Assemble your code by running lc2200-16as.py <filename>.s, if this
+	   operation is successful, you have file called <filename>.bin
+	3. You can run your .bin file with the simulator by typing
+	   lc2200-16sim.py <filename>.bin
+	   Note: Some useful commands are 'r' for run, 'q' for quit,
+	   'break [line # or label]', and 'help'
+
+Note: To define a label from which you can load and store data, use the
+following syntax:
+	
+<label>:	.word 0x<address>
+
+Basically, this lets you define a location in memory which can be used for
+load and store operations
+
+Note: You can comment out a line using '!'
+
+For project 1, we have given you a new option on the lc2200-16 assembler.
+
+    python lc220016-as.py --logisim myFile.s
+    
+This option will tell the script to output a logisim compatible version of
+your compiled code into separate files.
+
+To load this logisim compatible version of your assembled program, open the
+new 'myFile.hex' file in a text editor, copy the contents, and paste
+it into the logisim RAM unit (that you used to implement the memory) at address
+0 (a black box will be around the top left entry of memory). To paste, simply
+ctrl-v.
