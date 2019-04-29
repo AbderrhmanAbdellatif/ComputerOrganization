@@ -1,0 +1,12 @@
+addi $a0, $zero, 0;
+addi $a1, $zero, 10;
+loop1: addi $a0, $a0, 1;
+beq $a0,$a1, next;
+beq $zero, $zero, loop1;
+next: add $a2, $zero, $zero;
+addi $a1, $a1, 1;
+loop2: sw $a2, 0($zero);
+addi $a2, $a2, 1;
+beq $a2, $a1, end;
+bed $zero, $zero, loop2;
+end: halt;
